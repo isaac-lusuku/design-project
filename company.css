@@ -1,0 +1,230 @@
+#container{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+#navlist{
+    display: flex;
+    justify-content:flex-end;
+    list-style: none;
+    background-image: linear-gradient( 89.9deg,  rgba(208,246,255,1) 0.1%, rgba(255,237,237,1) 47.9%, rgba(255,255,231,1) 100.2% );
+    height: 8vh;
+    border-radius: 3mm;
+    align-items: center;
+    margin-bottom: 0px;
+    font-size: 1.23rem;
+    gap: 5%;
+    padding-left: 0px;
+    padding-right: 5%;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+a{text-decoration: none;
+    color: #FF6D60;}
+#home{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    background-image: linear-gradient( 89.9deg,  rgba(208,246,255,1) 0.1%, rgba(255,237,237,1) 47.9%, rgba(255,255,231,1) 100.2% );
+}
+#home>img{
+    height: 50vmax;
+}
+#about{
+    text-align: center;
+    width: 35vw;
+    align-self: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #606C5D;
+    }
+#coname{
+    font-size: 2rem;
+    margin-bottom: 0px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #83764F;
+}
+.art>p{
+    font-size: 0.9rem;
+}
+#services{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    margin-top: 3vh;
+}
+#services>div{
+    display: flex;
+    gap: 8vw;
+    margin: 0px 15%;
+}
+.art{
+    align-self: center;
+    font-family: 'Inconsolata', monospace;
+    color: #394867;
+}
+.one{text-align: right;}
+.two{text-align: left;}
+.img{
+    width: 65%;
+    height: 50vh;
+}
+#about1{
+    flex-direction: row-reverse;
+}
+article{
+    width: 40vw;
+}
+#footer{
+    display: flex;
+    height: 40vh;
+    background-color: black;
+    color: aliceblue;
+    gap: 3vmax;
+}
+#policy{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#policy>*{
+    margin-left: 3vw;
+}
+#policy>h4{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 0px;
+}
+#policy>p{
+    width: 70%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.75rem;
+}
+#policy>img{
+    width: 10vmax;
+    height: 10vmax;
+    border-radius: 50%;
+    margin-top: 4px;
+}
+.line{
+    width: 2px;
+    height: 80%;
+    background-color: aliceblue;
+}
+#contact{
+    text-align: center;
+    width: 40%;
+    display: grid;
+    place-items: center;
+}
+.bottom{
+    align-self: flex-end;
+}
+.general{
+    align-self: center;
+}
+#contact>h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.7rem;
+}
+#contact>blockquote{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 2.7rem;
+    width: 50%;
+}
+#contact>p{
+    display: grid ;
+    place-items: center;
+    border-style: solid;
+    border-color: aliceblue;
+    width: 150px;
+    height: 40px;
+    font-size: 1.5rem;
+    border-radius: 20mm;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.general>ul{
+    list-style-type: none;
+    font-size: 1.2rem;
+}
+.general>ul>li{
+    margin-top: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.general>p{
+    text-decoration: underline;
+    font-size: 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 100;
+}
+
+@media (max-width: 850px){
+    #services>div{
+        gap: 3vw;
+        margin: 0%;
+    }
+    article{
+        width: 60vw;
+    }
+    #services>div{
+        flex-direction: column;
+    }
+    .art{
+        text-align: center;
+    }
+    .img{
+        align-self: center;
+        width: 80%;
+        height: 40vh;
+        border-radius: 10%;
+    }
+    #about{width:80%;}
+    #navlist{
+        height: 6vh;
+        border-radius: 3mm;
+        font-size: 0.7rem;
+        justify-content: space-around;
+        padding-right: 0px;
+        gap: 0px;
+    }
+    .art>p{
+        font-size: 0.8rem;
+    }
+    .not{
+        display: none;
+    }
+    #footer{
+        flex-direction: column;
+        height: fit-content;
+    }
+    #policy>*{
+        margin-left: 0px;
+    }
+    #policy{
+        width: 100%;
+        align-items: center ;
+        text-align: center;
+    }
+    #policy>img{
+        width: 20vmax;
+        height: 20vmax;
+        order: 2;
+    }
+    #policy>p{order: 3;}
+    #contact{
+        width: 100%;
+        margin-top: 0px;
+    }
+    #contact>blockquote{
+        font-size: 2rem;
+        width: 58%;
+        margin-top: 0px;
+    }
+    #contact>h3{margin-top: 0px;}
+    .middle{
+        margin-bottom: 0px;
+        width: 70%;
+        height: 2px;
+        background-color: aliceblue;
+        align-self: center;
+    }
+}
